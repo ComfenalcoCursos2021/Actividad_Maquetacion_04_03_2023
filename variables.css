@@ -1,0 +1,12 @@
+:root{
+    --color-background:#fafafa;
+    --color-primary:#1abc9c;
+    --color-primary-2:#149279;
+    --color-shadow:rgba(0, 0, 0, 0.1 );
+    --color-title:#333;
+    --color-lorem:#555;
+}
+::selection{
+    background-color: var(--color-primary-2);
+    color: var(--color-background);
+}

@@ -1,6 +1,6 @@
 import formulario from "./components/formulario.js";
+formulario.Data();
 formulario.Send();
-
 
 
 
