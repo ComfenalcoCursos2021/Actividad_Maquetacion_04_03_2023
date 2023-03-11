@@ -18,16 +18,16 @@ export default{
         document.querySelectorAll(".social-icons a")[2].href= json["contact-info"][8]
         document.querySelectorAll(".social-icons a")[3].href= json["contact-info"][9]
         document.querySelectorAll(".title")[1].insertAdjacentText("beforeend", json["contact-form"][0])
-        document.querySelectorAll(".input-container input")[0].name= json["contact-form"][1]
+        document.querySelectorAll(".input-container input")[0].name= json["contact-form"][1].replaceAll(" ", "");
         document.querySelectorAll(".input-container label")[0].insertAdjacentText("beforeend", json["contact-form"][1])
         document.querySelectorAll(".input-container span")[0].insertAdjacentText("beforeend", json["contact-form"][1])
-        document.querySelectorAll(".input-container input")[1].name= json["contact-form"][2]
+        document.querySelectorAll(".input-container input")[1].name= json["contact-form"][2].replaceAll(" ", "");
         document.querySelectorAll(".input-container label")[1].insertAdjacentText("beforeend", json["contact-form"][2])
         document.querySelectorAll(".input-container span")[1].insertAdjacentText("beforeend", json["contact-form"][2])
-        document.querySelectorAll(".input-container input")[2].name= json["contact-form"][3]
+        document.querySelectorAll(".input-container input")[2].name= json["contact-form"][3].replaceAll(" ", "");
         document.querySelectorAll(".input-container label")[2].insertAdjacentText("beforeend", json["contact-form"][3])
         document.querySelectorAll(".input-container span")[2].insertAdjacentText("beforeend", json["contact-form"][3])
-        document.querySelectorAll(".input-container textarea")[0].name= json["contact-form"][4]
+        document.querySelectorAll(".input-container textarea")[0].name= json["contact-form"][4].replaceAll(" ", "");
         document.querySelectorAll(".input-container label")[3].insertAdjacentText("beforeend", json["contact-form"][4])
         document.querySelectorAll(".input-container span")[3].insertAdjacentText("beforeend", json["contact-form"][4])
         document.querySelector(".btn").value= json["contact-form"][5]
@@ -39,7 +39,7 @@ export default{
             let peticion = await fetch(this.name.action,this.confi);
             let success = await peticion.text();
             this.name.reset();
-            console.log(success);
+            alert(success);
         })
     }
 }

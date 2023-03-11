@@ -3,7 +3,7 @@
 
 <!-- cambiar el color con el archivo variables.css 'color-primary:#1abc9c;'  -->
 <style type="text/css">
-	@import url(../variables.css);
+	@import url(../css/variables.css);
 	.st0{fill:var(--color-primary);}
 	.st1{fill:var(--color-primary);}
 </style>

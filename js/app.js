@@ -17,6 +17,10 @@ formulario.Send();
 
 
 
+
+
+
+
 const inputs = document.querySelectorAll(".input");
 function focusFunc() {
     let parent = this.parentNode;
